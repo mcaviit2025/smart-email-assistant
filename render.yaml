@@ -3,10 +3,10 @@ services:
     name: smart-email-assistant-api
     runtime: docker
     dockerfilePath: ./Dockerfile
-    context: .
     region: singapore
     plan: free
     healthCheckPath: /api/email/health
+
     envVars:
       - key: SPRING_AI_GOOGLE_GENAI_API_KEY
         sync: false
